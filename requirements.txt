@@ -1,0 +1,43 @@
+# ============================================================
+# AI LaTeX CLI — Python Dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+# Or install the full package: pip install -e .
+# ============================================================
+
+# --- CLI Framework ---
+typer[all]>=0.12.0          # Modern CLI builder with auto --help and rich output
+click>=8.1.7                # Underlying dependency for Typer; used directly for some utilities
+
+# --- Terminal Output & UX ---
+rich>=13.7.0                # Beautiful terminal formatting: panels, tables, spinners, syntax highlighting
+shellingham>=1.5.4          # Shell detection (used by Typer for shell completion)
+
+# --- LLM API Client ---
+openai>=1.30.0              # OpenAI-compatible SDK used to connect to DeepSeek API
+                            # DeepSeek exposes an OpenAI-compatible REST interface,
+                            # so this SDK works seamlessly with a custom base_url
+
+# --- Environment & Configuration ---
+python-dotenv>=1.0.1        # Loads DEEPSEEK_API_KEY and other vars from .env file
+pydantic>=2.7.0             # Data validation for config models and API response parsing
+pydantic-settings>=2.2.1    # Settings management with .env support via Pydantic v2
+
+# --- File System & Text Utilities ---
+pathlib2>=2.3.7             # Enhanced pathlib for cross-platform file path handling
+chardet>=5.2.0              # Character encoding detection when reading .tex files
+
+# --- LaTeX Parsing & Manipulation ---
+pylatexenc>=2.10            # LaTeX encoder/decoder for safe string injection into .tex files
+regex>=2024.4.16            # Advanced regex for section/command pattern matching in .tex files
+
+# --- Testing ---
+pytest>=8.2.0               # Test runner
+pytest-cov>=5.0.0           # Code coverage reporting
+pytest-mock>=3.14.0         # Mocking for unit tests (e.g., mock API responses, subprocess calls)
+
+# --- Development Utilities ---
+black>=24.4.2               # Code formatter
+isort>=5.13.2               # Import sorter
+flake8>=7.0.0               # Linter
+mypy>=1.10.0                # Static type checker
