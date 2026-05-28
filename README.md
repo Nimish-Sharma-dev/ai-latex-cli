@@ -38,7 +38,7 @@ cd ai-latex-cli
 
 # Fire up a virtual environment so dependencies don't clash globally
 python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
+venv\Scripts\activate   # On Linux or macOS use: source venv/bin/activate 
 
 # Install the dependencies + dev tools
 pip install -r requirements.txt
