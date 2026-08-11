@@ -1,1 +1,7 @@
 venv
+.env
+/outputs
+/src/__pycache__
+/src/core/__pycache__
+/src/api/__pycache__
+/src/cli/__pycache__

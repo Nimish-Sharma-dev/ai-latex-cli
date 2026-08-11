@@ -1,0 +1,36 @@
+{
+  "ieee": [
+    "ieee",
+    "conference",
+    "embc",
+    "tbme",
+    "proceedings",
+    "submission"
+  ],
+  "presentation": [
+    "slides",
+    "presentation",
+    "beamer",
+    "lecture",
+    "talk",
+    "deck",
+    "defense"
+  ],
+  "clinical_protocol": [
+    "clinical",
+    "trial",
+    "protocol",
+    "rct",
+    "irb",
+    "study",
+    "medical device"
+  ],
+  "standard": [
+    "article",
+    "essay",
+    "report",
+    "document",
+    "notes",
+    "standard"
+  ]
+}
