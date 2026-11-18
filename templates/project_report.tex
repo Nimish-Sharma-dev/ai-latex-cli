@@ -1,0 +1,102 @@
+\documentclass[12pt,oneside,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\onehalfspacing
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue!70!black,
+    urlcolor=blue!80!black
+}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!6},
+    numbers=left,
+    numberstyle=\tiny\color{gray}
+}
+
+\begin{document}
+
+% ── Cover / Title Page ──────────────────────────────────────────────────────────
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+    
+    {\Huge \textbf{<<<DOCUMENT_TITLE>>>} \par}
+    \vspace{1.2cm}
+    {\large \textbf{Project Technical Audit and System Specification Report} \par}
+    
+    \vspace{2.5cm}
+    \textbf{Prepared By:}\\
+    {\Large <<<AUTHOR_NAME>>> \par}
+    {\normalsize <<<AUTHOR_EMAIL>>> \par}
+    
+    \vfill
+    {\large \textbf{<<<INSTITUTION_NAME>>>} \par}
+    {\small <<<AUTHOR_LOCATION>>> \par}
+    \vspace{0.8cm}
+    {\normalsize \today \par}
+\end{titlepage}
+
+% ── Abstract & Acknowledgments ────────────────────────────────────────────────
+\pagenumbering{roman}
+\chapter*{Executive Summary}
+<<<ABSTRACT_CONTENT>>>
+
+\chapter*{Keywords}
+<<<KEYWORDS>>>
+
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+\newpage
+
+\pagenumbering{arabic}
+
+% ── Main Chapters ─────────────────────────────────────────────────────────────
+\chapter{Introduction and Motivation}
+<<<SECTION_INTRODUCTION>>>
+
+\chapter{Literature Survey and Related Technologies}
+<<<SECTION_BACKGROUND>>>
+
+\chapter{Architecture and System Engineering}
+<<<SECTION_ARCHITECTURE>>>
+
+\chapter{Software Implementation and Core Modules}
+<<<SECTION_IMPLEMENTATION>>>
+
+\chapter{Empirical Evaluation, Verification, and Results}
+<<<SECTION_EVALUATION>>>
+
+\chapter{Critical Discussion and System Limitations}
+<<<SECTION_DISCUSSION>>>
+
+\chapter{Conclusion and Future Roadmap}
+<<<SECTION_CONCLUSION>>>
+
+<<<BIBLIOGRAPHY_BLOCK>>>
+
+\end{document}

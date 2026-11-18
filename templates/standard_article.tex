@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=green!50!black,
+    urlcolor=blue!80!black
+}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!8},
+    keywordstyle=\color{blue!80!black}\bfseries,
+    commentstyle=\color{gray!80!black}\itshape
+}
+
+\title{\textbf{<<<DOCUMENT_TITLE>>>}}
+\author{<<<AUTHOR_NAME>>> \\ \small <<<INSTITUTION_NAME>>> \\ \small \texttt{<<<AUTHOR_EMAIL>>>}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+<<<ABSTRACT_CONTENT>>>
+\end{abstract}
+
+\textbf{Keywords:} <<<KEYWORDS>>>
+
+\section{Introduction}
+<<<SECTION_INTRODUCTION>>>
+
+\section{Background and Related Work}
+<<<SECTION_BACKGROUND>>>
+
+\section{System Architecture and Methodology}
+<<<SECTION_ARCHITECTURE>>>
+
+\section{Technical Implementation}
+<<<SECTION_IMPLEMENTATION>>>
+
+\section{Experimental Results and Performance Analysis}
+<<<SECTION_EVALUATION>>>
+
+\section{Discussion}
+<<<SECTION_DISCUSSION>>>
+
+\section{Conclusion}
+<<<SECTION_CONCLUSION>>>
+
+<<<BIBLIOGRAPHY_BLOCK>>>
+
+\end{document}
