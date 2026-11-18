@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-11-18T18:20:00.000000+00:00",
+  "skills": {
+    "biomedical-signal-filtering": {
+      "name": "biomedical-signal-filtering",
+      "identifier": "biomedical-signal-filtering",
+      "source": "https://github.com/example/biosignal-dsp",
+      "is_repo": true,
+      "description": "Digital signal processing filter library for ECG and EEG",
+      "keywords": [
+        "biomedical-signal-filtering",
+        "digital",
+        "filter",
+        "library",
+        "processing",
+        "signal"
+      ],
+      "registered_at": "2026-11-18T18:20:00.000000+00:00"
+    }
+  },
+  "harnesses": {
+    "ecg-benchmark-suite": {
+      "name": "ecg-benchmark-suite",
+      "identifier": "ecg-benchmark-suite",
+      "command": "pytest tests/ --benchmark-only",
+      "type": "benchmark",
+      "description": "Automated ECG classification accuracy and latency benchmark",
+      "keywords": [
+        "benchmark",
+        "ecg-benchmark-suite"
+      ],
+      "registered_at": "2026-11-18T18:20:00.000000+00:00"
+    }
+  },
+  "formats": {
+    "springer-lncs": {
+      "name": "springer-lncs",
+      "identifier": "springer-lncs",
+      "template_file": "springer-lncs.tex",
+      "description": "Springer Lecture Notes in Computer Science format",
+      "styling_rules": {
+        "document_class": "llncs",
+        "margin": "1.2in",
+        "columns": "onecolumn"
+      },
+      "keywords": [
+        "springer-lncs"
+      ],
+      "registered_at": "2026-11-18T18:20:00.000000+00:00"
+    }
+  }
+}
