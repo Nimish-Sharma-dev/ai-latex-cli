@@ -31,6 +31,10 @@ chardet>=5.2.0              # Character encoding detection when reading .tex fil
 pylatexenc>=2.10            # LaTeX encoder/decoder for safe string injection into .tex files
 regex>=2024.4.16            # Advanced regex for section/command pattern matching in .tex files
 
+# --- Visual, Diagrams & Figure Generation ---
+matplotlib>=3.8.0           # Vector and raster architecture/benchmark figures
+pillow>=10.0.0              # Terminal and UI screenshot synthesis
+
 # --- Testing ---
 pytest>=8.2.0               # Test runner
 pytest-cov>=5.0.0           # Code coverage reporting
