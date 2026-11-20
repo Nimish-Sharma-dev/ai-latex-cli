@@ -27,3 +27,13 @@ Final thoughts.
     assert "New novel research methodology." in updated
     assert "Old introduction text." not in updated
     assert "\\section{Conclusion}" in updated
+
+
+def test_clinical_protocol_template():
+    fs = FileSystemManager()
+    template_name = fs.match_template_by_prompt("Draft an IRB clinical trial protocol for biosensors")
+    assert template_name == "clinical_protocal.tex"
+    content = fs.load_template(template_name)
+    assert "\\begin{document}" in content
+    assert "Clinical Investigation Protocol" in content
+

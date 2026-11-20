@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{tabularx}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=green!50!black,
+    urlcolor=blue!80!black
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \textbf{Clinical Study Protocol}}
+\fancyhead[R]{\small Protocol ID: <<<PROTOCOL_ID>>>}
+\fancyfoot[C]{\thepage}
+
+\title{\textbf{<<<DOCUMENT_TITLE>>>} \\ \large Clinical Investigation Protocol \& Regulatory Documentation}
+\author{
+    \textbf{Principal Investigator:} <<<AUTHOR_NAME>>> \\
+    \small <<<INSTITUTION_NAME>>> \\
+    \small Contact: \texttt{<<<AUTHOR_EMAIL>>>}
+}
+\date{\today \quad | \quad Version: 1.0}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+\textbf{Protocol Summary:}
+<<<ABSTRACT_CONTENT>>>
+\end{abstract}
+
+\vspace{0.5cm}
+\noindent\textbf{Keywords:} <<<KEYWORDS>>>
+
+\section{Introduction and Study Rationale}
+<<<SECTION_INTRODUCTION>>>
+
+\section{Study Objectives and Hypotheses}
+<<<SECTION_OBJECTIVES>>>
+
+\section{Investigational Device or Intervention Description}
+<<<SECTION_INTERVENTION>>>
+
+\section{Subject Eligibility Criteria}
+\subsection{Inclusion Criteria}
+<<<INCLUSION_CRITERIA>>>
+
+\subsection{Exclusion Criteria}
+<<<EXCLUSION_CRITERIA>>>
+
+\section{Study Design and Methodology}
+<<<SECTION_METHODOLOGY>>>
+
+\section{Safety Monitoring and Adverse Event Reporting}
+<<<SECTION_SAFETY>>>
+
+\section{Statistical Analysis Plan (SAP)}
+<<<SECTION_STATISTICS>>>
+
+\section{Ethical Considerations and Regulatory Approvals}
+<<<SECTION_ETHICS>>>
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}
